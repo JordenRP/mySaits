@@ -4,73 +4,117 @@
   <meta charset="UTF-8">
   <title>Personal site</title>
   <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/swiper.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  
 </head>
 <body>
   <header>
     <div class="container">
       <div class="row"> 
-        <div class="col-lg-3 col-lg-offset-1">
+        <div class="col-lg-3 col-lg-offset-1 header-img">
           <img src="images/image-1.png" alt="computer">
         </div>
-        <div class="col-lg-4 col-lg-offset-1">
+        <div class="col-xs-6 col-xs-offset-2 col-lg-4 col-lg-offset-1 header-text">
           <p>I'm a novice web developer and this is my personal page. On it I will post my work. You can also leave your contacts for co-operation.</p>
         </div>
-        <div class="col-lg-1 col-lg-offset-2">
-          <div class="social social-vk"></div>
-          <div class="social social-git"></div>
+        <div class="col-xs-1 col-xs-offset-1 col-lg-1 col-lg-offset-2 social">
+          <a href="https://vk.com/id103609484"><div class="social-bg social-vk"></div></a>
+          <a href="https://github.com/JordenRP"><div class="social-bg social-git"></div></a>
         </div>
       </div>  
     </div>
   </header>
    
   <section>
-    <div class="container">
+   
+    <div class="caption">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-3">
+            <h1>Portfolio</h1>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    <div class="container remove">
       <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-          <h1>Portfolio</h1>
+       <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class=" col-xs-8 col-lg-5 col-lg-offset-5 my-work swiper-slide">
+            <div class="position-img">
+              <h3>My first own project</h3>
+              <img src="images/portfolio-1.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-8 col-lg-5 col-lg-offset-5 my-work swiper-slide">
+            <div class="position-img">
+              <img src="images/portfolio-2.png" alt="">
+              <h3>My project for FreeCodeCamp</h3>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> 
       </div>
+    </div>
+    </div>
+    
+    <div class="container remove-2">
       <div class="row">
-        <div class="col-lg-5 col-lg-offset-5">
-          
-        </div>
-        <div class="col-lg-5">
-          
-        </div>
-      </div>
+          <div class=" col-xs-8 col-lg-5 col-lg-offset-1 my-work">
+            <div class="position-img">
+              <h3>My first own project</h3>
+              <img src="images/portfolio-1.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-8 col-lg-5 my-work">
+            <div class="position-img">
+              <img src="images/portfolio-2.png" alt="">
+              <h3>My project for FreeCodeCamp</h3>
+            </div>
+          </div>
+    </div>
     </div>
   </section>
   
   <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-          <h1>How to order a website from me?</h1>
+   
+   <div class="caption">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-9 col-md-7 col-xs-offset-2 col-lg-6 col-lg-offset-3">
+            <h1>How to order a website from me?</h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-lg-offset-2">
+      </div>     
+    </div>
+    
+    <div class="container manual">
+      <div class="row manual-item">
+        <div class="col-xs-4 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
           <img src="images/cloud.png" alt="cloud">
         </div>
-        <div class="col-lg-3">
+        <div class="col-xs-5 col-lg-4">
           <h2>Step one</h2>
-          <p>Write me on the social network or leave a request on the site for feedback</p>
+          <p >Write me on the social network or leave a request on the site for feedback</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-2 col-lg-offset-2">
+      <div class="row manual-item">
+        <div class="col-xs-4 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
           <img src="images/cloud.png" alt="cloud">
         </div>
-        <div class="col-lg-3">
+        <div class="col-xs-5 col-lg-4">
           <h2>Step two</h2>
           <p>Provide a website layout and tell about your wishes</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-2 col-lg-offset-2">
+      <div class="row manual-item">
+        <div class="col-xs-4 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
           <img src="images/cloud.png" alt="cloud">
         </div>
-        <div class="col-lg-3">
+        <div class="col-xs-5 col-lg-4">
           <h2>Step three</h2>
           <p>Accept my work and leave feedback</p>
         </div>
@@ -78,23 +122,39 @@
     </div>
   </section>
   
-  <section>
+  <section class="contact">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-lg-offset-3">
+        <div class="col-xs-8 col-xs-offset-2 col-lg-3 col-lg-offset-3">
           <h1>Contact me</h1>
         </div>
       </div>
       <div class="row">
-        <form>
-          <label for="name"></label>
-          <input type="text" id="name" name="nickname" placeholder="Name...">
-          <label for="user-email"></label>
-          <input type="email" id="user-email" name="user-email" placeholder="Email...">
-          <label for="content"></label>
-          <textarea rows="10" cols="50" id="content"  name="content" placeholder="Message..."></textarea>
-          <input type="submit" value="Добавить">
-        </form>
+          <form class="contact-form">
+            <div class="row">
+              <div class="col-xs-5 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">   
+                <ul>
+                  <li>   
+                    <label for="name"></label>
+                    <input type="text" id="name" name="nickname" placeholder="Name...">
+                  </li>
+                  <li>
+                    <label for="user-email"></label>
+                    <input type="email" id="user-email" name="user-email" placeholder="Email...">
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-7 col-md-5 col-lg-5 ">
+                <label for="content"></label>
+                <textarea rows="10" cols="50" id="content"  name="content" placeholder="Message..."></textarea>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-xs-offset-5">   
+                  <button  type="submit">Send</button>
+                </div>  
+              </div>
+            </div>  
+          </form>
       </div>
     </div>
   </section>
@@ -102,12 +162,19 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-lg-offset-4">
+        <div class="col-xs-offset-4 col-lg-5 col-lg-offset-4 copyright">
           <p>
           Designed and coded by Pavel Gritsatsuev</p>
         </div>
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="JS/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container',{
+     loop: true, 
+    })
+  </script>
+ 
 </body>
 </html>
